@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<script>
+
+
+var games = [
+
+    {
+        name: 'FIFA',
+        rating: 9,
+        covers: ['ronaldo', 'messi', 'naymer', 'hazard'],
+        sport: 'soccer',
+
+    },
+    {
+        name: 'DIRT',
+        rating: 8,
+        covers: ['golf', 'mazda', 'mustang', 'bmw'],
+        sport: 'race'
+
+
+    },
+    {
+        name: 'EFC',
+        rating: 10,
+        covers: ['brock ', 'Anderson', 'Georges ', 'Jon '],
+        sport: 'MMA'
+
+    },
+    {
+        name: 'MADDEN',
+        rating: 7,
+        covers: ['Troy Polamalu', 'Pittsburgh Steelers', 'Larry Fitzgerald'],
+        sport: 'american football'
+    }
+];
+games.forEach(function (game, key) {
+    document.write('<br/>');
+    document.write(game.name);
+    document.write('<br/>');
+
+
+    game.covers.forEach(function ( covers) {
+        document.write(covers);
+        document.write('<br/>');
+
+    });
+//    games.forEach(function (sport, key) {
+//        document.write(sport.sport);
+//    });
+    document.write('<br/>');
+
+});
+
+
+
+</script>
+
+
